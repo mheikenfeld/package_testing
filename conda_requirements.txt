@@ -1,0 +1,8 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+
+# Python dependencies
+numpy
+scipy
+pandas
+matplotlib
