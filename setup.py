@@ -7,6 +7,6 @@ setup(name='mypackage',
       author='Max Heikenfeld',
       author_email='maxheikenfeld@web.de',
       license='MIT',
-      packages=['mypackage'],
+      packages=['mypackage','mypackage.subpackageb', 'mypackage.subpackage_A'],
       install_requires=[],
       zip_safe=False)

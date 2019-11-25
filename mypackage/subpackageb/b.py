@@ -1,3 +1,3 @@
-def do_b()
+def do_b():
     out="b"
     return out
