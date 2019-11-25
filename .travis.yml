@@ -43,7 +43,7 @@ install:
   - conda info -a
 
   # Install
-  - python setup.py --quiet install
+  - pip install .
 
   # Output debug info
   - conda list
