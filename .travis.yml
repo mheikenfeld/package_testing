@@ -45,6 +45,9 @@ install:
   # Install
   - python setup.py --quiet install
 
+  # Output debug info
+  - conda list
+
 # command to run tests
 #script
 script:
