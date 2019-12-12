@@ -1,7 +1,8 @@
 from setuptools import setup
 
 setup(name='mypackage',
-      version='0.9',
+      use_scm_version=True,
+      setup_requires=['setuptools_scm'],
       description='Package to test python packaging opions and functionality',
       url='http://github.com/mheikenfeld/package_testing',
       author='Max Heikenfeld',
