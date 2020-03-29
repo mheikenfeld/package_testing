@@ -52,10 +52,9 @@ install:
 # command to run tests
 #script
 script:
-  - pytest --cov=./
+  - python -m pytest --cov=./mypackage
 
 after_success:
-  - codecov
   - bash <(curl -s https://codecov.io/bash) 
 
 
