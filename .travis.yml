@@ -52,7 +52,7 @@ install:
 # command to run tests
 #script
 script:
-  - pytest --cov=./mypackage
+  - python -m pytest --cov=./mypackage
 
 after_success:
 #  - codecov
