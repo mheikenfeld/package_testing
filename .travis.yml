@@ -36,6 +36,8 @@ install:
   # ---------------------------------
   - conda install -c conda-forge --quiet --file conda_requirements.txt
   - conda install -c conda-forge --quiet pytest
+  - conda install -c conda-forge --quiet coverage
+  - conda install -c conda-forge --quiet pytest-cov
   - PREFIX=$HOME/miniconda/envs/$ENV_NAME
 
   # Output debug info
@@ -51,4 +53,9 @@ install:
 # command to run tests
 #script
 script:
-  - pytest
+  - pytest --cov=./
+
+after_success:
+  - codecov
+
+
