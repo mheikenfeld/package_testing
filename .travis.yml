@@ -2,17 +2,16 @@ language: python
 #sudo: false
 # choose python versions
 python:
-  - "3.6"
+  - "3.8"
   - "3.7"
+  - "3.6"
   - "2.7"
-env:
-  - TEST_TARGET=unit PYTHON_TARGET=3.6
-  # - TEST_TARGET=integration
 
 install:
 
   # Install miniconda
   # -----------------
+  - PYTHON_TARGET=$TRAVIS_PYTHON_VERSION
   - if [[ $PYTHON_TARGET == 2* ]]; then
       export CONDA_BASE=http://repo.continuum.io/miniconda/Miniconda2;
     else
@@ -36,6 +35,8 @@ install:
   # ---------------------------------
   - conda install -c conda-forge --quiet --file conda_requirements.txt
   - conda install -c conda-forge --quiet pytest
+  - conda install -c conda-forge --quiet coverage
+  - conda install -c conda-forge --quiet pytest-cov
   - PREFIX=$HOME/miniconda/envs/$ENV_NAME
 
   # Output debug info
@@ -51,4 +52,10 @@ install:
 # command to run tests
 #script
 script:
-  - pytest
+  - pytest --cov=./
+
+after_success:
+  - codecov
+  - bash <(curl -s https://codecov.io/bash) 
+
+
