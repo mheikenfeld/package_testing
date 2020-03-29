@@ -55,7 +55,7 @@ script:
   - pytest --cov=./mypackage
 
 after_success:
-  - codecov
-#  - bash <(curl -s https://codecov.io/bash) 
+#  - codecov
+  - bash <(curl -s https://codecov.io/bash) 
 
 
