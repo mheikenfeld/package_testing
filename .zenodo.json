@@ -1,4 +1,5 @@
-{ "title": "My Little Package: Test Package Repo"
+{ 
+  "title": "My Little Package: Test Package Repo",
   "creators": [
     { "name": "Heikenfeld, Max",
       "affiliation": "University of Oxford",
