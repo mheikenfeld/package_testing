@@ -1,1 +1,11 @@
-
+{
+  "creators": [
+    { "name": "Heikenfeld, Max",
+      "affiliation": "University of Oxford",
+      "orcid": "0000-0001-8124-8048"}
+  ],
+  "keywords": [
+    "cloud tracking"
+  ],
+  "upload_type": "software"
+}
