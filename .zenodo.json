@@ -1,7 +1,7 @@
 { 
   "title": "My Little Package: Test Package Repo",
   "creators": [
-        { "name": "Package community"}
+        { "name": "Package community"},
     { "name": "Heikenfeld, Max",
       "affiliation": "University of Oxford",
       "orcid": "0000-0001-8124-8048"}
